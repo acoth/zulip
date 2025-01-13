@@ -569,11 +569,11 @@ export function validate_stream_message_mentions(opts: StreamWildcardOptions): b
 }
 
 export function validate_stream_message_address_info(sub: StreamSubscription): boolean {
-    if (sub.subscribed) {
+    //if (sub.subscribed) {
         return true;
-    }
-    compose_banner.show_stream_not_subscribed_error(sub);
-    return false;
+    //}
+    //compose_banner.show_stream_not_subscribed_error(sub);
+    //return false;
 }
 
 function validate_stream_message(scheduling_message: boolean): boolean {
